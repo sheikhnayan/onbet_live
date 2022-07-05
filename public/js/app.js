@@ -74312,7 +74312,7 @@ var render = function () {
                                     betDetail["status"] == 0
                                       ? _c(
                                           "b",
-                                          { staticClass: "text-primary" },
+                                          { staticClass: "text-danger" },
                                           [_vm._v(" x")]
                                         )
                                       : betDetail["status"] == 1
@@ -74496,7 +74496,7 @@ var render = function () {
                                     betDetail["status"] == 0
                                       ? _c(
                                           "b",
-                                          { staticClass: "text-primary" },
+                                          { staticClass: "text-danger" },
                                           [_vm._v(" x")]
                                         )
                                       : betDetail["status"] == 1
@@ -74680,7 +74680,7 @@ var render = function () {
                                     betDetail["status"] == 0
                                       ? _c(
                                           "b",
-                                          { staticClass: "text-primary" },
+                                          { staticClass: "text-danger" },
                                           [_vm._v(" x")]
                                         )
                                       : betDetail["status"] == 1
@@ -74737,190 +74737,6 @@ var render = function () {
                   },
                 }),
                 _vm._v("\n                    Basketball\n                "),
-              ]),
-              _vm._v(" "),
-              _vm._l(_vm.matches[2], function (match, key) {
-                return _c(
-                  "div",
-                  [
-                    _c("div", { staticClass: "matchTournamentLiveWrap" }, [
-                      _c("div", { staticClass: "matchTournamentDetailPart" }, [
-                        _c("p", [
-                          _vm._v(
-                            "\n                                " +
-                              _vm._s(
-                                _vm._f("capitalizeFirstLetter")(
-                                  match["tournamentName"]
-                                )
-                              ) +
-                              "\n\n                                "
-                          ),
-                          _c("span", { staticClass: "badge badge-success" }, [
-                            _vm._v(
-                              _vm._s(
-                                _vm._f("dateformat")(match["matchDateTime"])
-                              )
-                            ),
-                          ]),
-                          _vm._v(" "),
-                          _c("span", { staticClass: "badge badge-primary" }, [
-                            _vm._v(
-                              " " +
-                                _vm._s(
-                                  _vm._f("timeformat")(match["matchDateTime"])
-                                )
-                            ),
-                          ]),
-                        ]),
-                        _vm._v(" "),
-                        _c("p", [
-                          _vm._v(
-                            "\n                                " +
-                              _vm._s(match["matchTitle"]) +
-                              "\n                            "
-                          ),
-                        ]),
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "matchTournamentLivePart" }, [
-                        match["status"] == 3
-                          ? _c("span", { staticClass: "liveNotification" }, [
-                              _c("b", { staticClass: "liveDot" }),
-                              _vm._v("Live"),
-                            ])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        match["overs"] != null && match["status"] == 3
-                          ? _c("span", { staticClass: "matchOver" }, [
-                              _vm._v(" Overs " + _vm._s(match["overs"]) + " "),
-                            ])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        match["status"] == 3
-                          ? _c("span", { staticClass: "matchScores" }, [
-                              _vm._v(_vm._s(match["score"])),
-                            ])
-                          : _vm._e(),
-                      ]),
-                    ]),
-                    _vm._v(" "),
-                    _vm._l(match["matchOption"], function (matchesOption, key) {
-                      return _c("div", [
-                        _c("div", { staticClass: "team-name-part" }, [
-                          _c("div", { staticClass: "content" }, [
-                            _c(
-                              "span",
-                              { staticClass: "name badge badge-dark" },
-                              [
-                                _vm._v(
-                                  _vm._s(
-                                    _vm._f("capitalizeFirstLetter")(
-                                      matchesOption["matchOption"]
-                                    )
-                                  )
-                                ),
-                              ]
-                            ),
-                          ]),
-                        ]),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "choice-team-part" },
-                          _vm._l(
-                            matchesOption["betDetails"],
-                            function (betDetail, key) {
-                              return _c(
-                                "button",
-                                {
-                                  staticClass:
-                                    "single-item-for-mobile clickSingleBetDetail",
-                                  attrs: {
-                                    value: "",
-                                    "data-target": "#placeBetBtn",
-                                    "data-toggle": "modal",
-                                    "data-backdrop": "",
-                                    "data-keyboard": "false",
-                                  },
-                                  on: {
-                                    click: function ($event) {
-                                      return _vm.clickSingleBetDetail(
-                                        betDetail,
-                                        matchesOption["matchOption"]
-                                      )
-                                    },
-                                  },
-                                },
-                                [
-                                  _c("span", [
-                                    _vm._v(
-                                      _vm._s(
-                                        _vm._f("capitalizeFirstLetter")(
-                                          betDetail["betName"]
-                                        )
-                                      ) +
-                                        "\n                                    "
-                                    ),
-                                    betDetail["status"] == 0
-                                      ? _c(
-                                          "b",
-                                          { staticClass: "text-primary" },
-                                          [_vm._v(" x")]
-                                        )
-                                      : betDetail["status"] == 1
-                                      ? _c(
-                                          "b",
-                                          { staticClass: "text-primary" },
-                                          [
-                                            _vm._v(
-                                              " " + _vm._s(betDetail["betRate"])
-                                            ),
-                                          ]
-                                        )
-                                      : _vm._e(),
-                                  ]),
-                                ]
-                              )
-                            }
-                          ),
-                          0
-                        ),
-                      ])
-                    }),
-                  ],
-                  2
-                )
-              }),
-            ],
-            2
-          ),
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        {
-          staticClass: "tab-pane fade",
-          attrs: {
-            id: "baseball",
-            role: "tabpanel",
-            "aria-labelledby": "baseball-tab",
-          },
-        },
-        [
-          _c(
-            "div",
-            { staticClass: "sports_single_category" },
-            [
-              _c("h4", { staticClass: "text-center" }, [
-                _c("img", {
-                  attrs: {
-                    src: "backend/uploads/users/volley.png",
-                    alt: "image",
-                    width: "20",
-                  },
-                }),
-                _vm._v("\n                    Volley\n                "),
               ]),
               _vm._v(" "),
               _vm._l(_vm.matches[3], function (match, key) {
@@ -75048,7 +74864,191 @@ var render = function () {
                                     betDetail["status"] == 0
                                       ? _c(
                                           "b",
+                                          { staticClass: "text-danger" },
+                                          [_vm._v(" x")]
+                                        )
+                                      : betDetail["status"] == 1
+                                      ? _c(
+                                          "b",
                                           { staticClass: "text-primary" },
+                                          [
+                                            _vm._v(
+                                              " " + _vm._s(betDetail["betRate"])
+                                            ),
+                                          ]
+                                        )
+                                      : _vm._e(),
+                                  ]),
+                                ]
+                              )
+                            }
+                          ),
+                          0
+                        ),
+                      ])
+                    }),
+                  ],
+                  2
+                )
+              }),
+            ],
+            2
+          ),
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "tab-pane fade",
+          attrs: {
+            id: "baseball",
+            role: "tabpanel",
+            "aria-labelledby": "baseball-tab",
+          },
+        },
+        [
+          _c(
+            "div",
+            { staticClass: "sports_single_category" },
+            [
+              _c("h4", { staticClass: "text-center" }, [
+                _c("img", {
+                  attrs: {
+                    src: "backend/uploads/users/volley.png",
+                    alt: "image",
+                    width: "20",
+                  },
+                }),
+                _vm._v("\n                    Volley\n                "),
+              ]),
+              _vm._v(" "),
+              _vm._l(_vm.matches[2], function (match, key) {
+                return _c(
+                  "div",
+                  [
+                    _c("div", { staticClass: "matchTournamentLiveWrap" }, [
+                      _c("div", { staticClass: "matchTournamentDetailPart" }, [
+                        _c("p", [
+                          _vm._v(
+                            "\n                                " +
+                              _vm._s(
+                                _vm._f("capitalizeFirstLetter")(
+                                  match["tournamentName"]
+                                )
+                              ) +
+                              "\n\n                                "
+                          ),
+                          _c("span", { staticClass: "badge badge-success" }, [
+                            _vm._v(
+                              _vm._s(
+                                _vm._f("dateformat")(match["matchDateTime"])
+                              )
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "badge badge-primary" }, [
+                            _vm._v(
+                              " " +
+                                _vm._s(
+                                  _vm._f("timeformat")(match["matchDateTime"])
+                                )
+                            ),
+                          ]),
+                        ]),
+                        _vm._v(" "),
+                        _c("p", [
+                          _vm._v(
+                            "\n                                " +
+                              _vm._s(match["matchTitle"]) +
+                              "\n                            "
+                          ),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "matchTournamentLivePart" }, [
+                        match["status"] == 3
+                          ? _c("span", { staticClass: "liveNotification" }, [
+                              _c("b", { staticClass: "liveDot" }),
+                              _vm._v("Live"),
+                            ])
+                          : _vm._e(),
+                        _vm._v(" "),
+                        match["overs"] != null && match["status"] == 3
+                          ? _c("span", { staticClass: "matchOver" }, [
+                              _vm._v(" Overs " + _vm._s(match["overs"]) + " "),
+                            ])
+                          : _vm._e(),
+                        _vm._v(" "),
+                        match["status"] == 3
+                          ? _c("span", { staticClass: "matchScores" }, [
+                              _vm._v(_vm._s(match["score"])),
+                            ])
+                          : _vm._e(),
+                      ]),
+                    ]),
+                    _vm._v(" "),
+                    _vm._l(match["matchOption"], function (matchesOption, key) {
+                      return _c("div", [
+                        _c("div", { staticClass: "team-name-part" }, [
+                          _c("div", { staticClass: "content" }, [
+                            _c(
+                              "span",
+                              { staticClass: "name badge badge-dark" },
+                              [
+                                _vm._v(
+                                  _vm._s(
+                                    _vm._f("capitalizeFirstLetter")(
+                                      matchesOption["matchOption"]
+                                    )
+                                  )
+                                ),
+                              ]
+                            ),
+                          ]),
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "choice-team-part" },
+                          _vm._l(
+                            matchesOption["betDetails"],
+                            function (betDetail, key) {
+                              return _c(
+                                "button",
+                                {
+                                  staticClass:
+                                    "single-item-for-mobile clickSingleBetDetail",
+                                  attrs: {
+                                    value: "",
+                                    "data-target": "#placeBetBtn",
+                                    "data-toggle": "modal",
+                                    "data-backdrop": "",
+                                    "data-keyboard": "false",
+                                  },
+                                  on: {
+                                    click: function ($event) {
+                                      return _vm.clickSingleBetDetail(
+                                        betDetail,
+                                        matchesOption["matchOption"]
+                                      )
+                                    },
+                                  },
+                                },
+                                [
+                                  _c("span", [
+                                    _vm._v(
+                                      _vm._s(
+                                        _vm._f("capitalizeFirstLetter")(
+                                          betDetail["betName"]
+                                        )
+                                      ) +
+                                        "\n                                    "
+                                    ),
+                                    betDetail["status"] == 0
+                                      ? _c(
+                                          "b",
+                                          { staticClass: "text-danger" },
                                           [_vm._v(" x")]
                                         )
                                       : betDetail["status"] == 1
@@ -75104,7 +75104,7 @@ var render = function () {
                     width: "20",
                   },
                 }),
-                _vm._v("\n                    Tennis\n                "),
+                _vm._v("\n                    Table Tennis\n                "),
               ]),
               _vm._v(" "),
               _vm._l(_vm.matches[4], function (match, key) {
@@ -75232,7 +75232,7 @@ var render = function () {
                                     betDetail["status"] == 0
                                       ? _c(
                                           "b",
-                                          { staticClass: "text-primary" },
+                                          { staticClass: "text-danger" },
                                           [_vm._v(" x")]
                                         )
                                       : betDetail["status"] == 1
