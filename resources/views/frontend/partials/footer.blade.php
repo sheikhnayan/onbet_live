@@ -3,7 +3,7 @@
     <div class="footer-top">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-6 col-sm-6">
                     <div class="footer-widget widget-about">
                         <div class="text-center mb-2">
                             <a class="logo">
@@ -32,7 +32,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-sm-6">
+                <div class="col-lg-6 col-sm-6">
                     <div class="footer-widget widget-menu">
                         <h3 class="widget-title">Help</h3>
                         <ul class="menu-links">
@@ -48,7 +48,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-5 col-sm-6">
+                {{-- <div class="col-lg-5 col-sm-6">
                     <div class="footer-widget widget-subscribe">
                         <h3 class="widget-title">Subscribe</h3>
                         <div class="widget-subscribe-body">
@@ -62,7 +62,7 @@
                             <img style="margin-right: 26px; margin-bottom: 15px;" src="{{ asset("images/protected.jpg") }}" alt="onbet365">
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </div><!-- footer-top end -->
