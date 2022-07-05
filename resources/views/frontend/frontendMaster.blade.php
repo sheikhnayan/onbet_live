@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}" />
-    <link rel="shortcut icon" type="image/png" href="{{ asset('/images/icon_main.PNG') }}"/>
+    <link rel="shortcut icon" type="image/png" href="{{ asset('/images/betus_icon_last.PNG') }}"/>
     <script src="https://kit.fontawesome.com/efec89e16a.js" crossorigin="anonymous"></script>
     <title>Betus</title>
 

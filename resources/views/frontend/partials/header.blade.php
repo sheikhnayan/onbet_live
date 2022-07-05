@@ -8,14 +8,14 @@
             <div class="row">
                 <div class="col-lg-2">
                     <a class="site-logo site-title mt-md-4" href="{{url("/")}}">
-                        <img class="" src="{{ asset('/images/logolast.png') }}" alt="OnBet365"/>
+                        <img class="" src="{{ asset('/images/betus_logo_last.PNG') }}" alt="OnBet365"/>
                     </a>
                 </div>
                 <div class="onBetNav @if(Auth::guard("web")->check()) col-lg-6 @else col-lg-5 @endif">
 
                     <header>
                         <a href="{{url("/")}}">
-                            <img class="" src="{{ asset('/images/logolast.png') }}" alt="OnBet365"/>
+                            <img class="" src="{{ asset('/images/betus_logo_last.PNG') }}" alt="OnBet365"/>
                         </a>
                     </header>
                     <a href="#" class="nav-button">Menu</a>
