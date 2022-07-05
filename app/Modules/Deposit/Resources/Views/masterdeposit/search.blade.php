@@ -53,11 +53,14 @@
                                                                     <span class="required text-danger"> *</span>
                                                                 </div>
                                                             </div>
+                                                            @php
+                                                               $depositors =  DB::table('admins')->where('role_id',4)->latest()->get();
+                                                            @endphp
                                                             <select class="form-control" name="accepted_by">
                                                                 <option class="font-size-16 font-weight-bold" value="0">Select Who</option>
-                                                                <option class="font-size-16 font-weight-bold" value="2">shinzoabe2001</option>
-                                                                <option class="font-size-16 font-weight-bold" value="3">xijinping2001</option>
-                                                                <option class="font-size-16 font-weight-bold" value="6">onlytranjection</option>
+                                                                @foreach ($depositors as $item)
+                                                                <option class="font-size-16 font-weight-bold" value="{{ $item->id }}">{{ $item->username }}</option>
+                                                                @endforeach
                                                             </select>
                                                         </div>
                                                     </div>
