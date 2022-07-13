@@ -534,6 +534,65 @@
                         </ul>
                     </li>
                     @endif
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    @if(Auth::guard("admin")->user()->userRole->id == 4)
+                    <li id="configManage" class="site-menu-item has-sub">
+                        <a href="javascript:void(0)">
+                            <i class="site-menu-icon wb-folder" aria-hidden="true"></i>
+                            <span class="site-menu-title">Configuration</span>
+                            <span class="site-menu-arrow"></span>
+                        </a>
+                        <ul class="site-menu-sub">
+                            <li id="configManageChildLi" class="site-menu-item">
+                                <a class="animsition-link" href="{{ route("config_manage") }}">
+                                    <span class="site-menu-title">Config</span>
+                                </a>
+                            </li>
+                            <li id="bkashManageChildLi" class="site-menu-item">
+                                <a class="animsition-link" href="{{ route("bkash_manage") }}">
+                                    <span class="site-menu-title">Bkash</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    @endif
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                     @if(Auth::guard("admin")->user()->userRole->id != 4)
                     <li id="teamManage" class="site-menu-item has-sub">
                         <a href="javascript:void(0)">
