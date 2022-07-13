@@ -15,7 +15,7 @@
 
                     <header>
                         <a href="{{url("/")}}">
-                            <img class="" src="{{ asset('/images/betus_logo_last.png') }}" alt="OnBet365"/>
+                            <img class="" style="max-width: 30%" src="{{ asset('/images/betus_logo_last.png') }}" alt="OnBet365"/>
                         </a>
                     </header>
                     <a href="#" class="nav-button">Menu</a>
