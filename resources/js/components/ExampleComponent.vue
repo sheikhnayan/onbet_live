@@ -20,16 +20,17 @@
                     <span>Football</span>
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" id="bascketball-tab" data-toggle="tab" href="#bascketball" role="tab" aria-controls="bascketball" aria-selected="false">
-                    <img class="tennisCusColor" :src="`backend/uploads/users/basketball.png`" alt="image">
-                    <span>Bascketball</span>
-                </a>
-            </li>
+            
             <li class="nav-item">
                 <a class="nav-link" id="baseball-tab" data-toggle="tab" href="#baseball" role="tab" aria-controls="baseball" aria-selected="false">
                     <img class="tennisCusColor" :src="`backend/uploads/users/volleyball.png`" alt="image">
                     <span>Volleyball</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="bascketball-tab" data-toggle="tab" href="#bascketball" role="tab" aria-controls="bascketball" aria-selected="false">
+                    <img class="tennisCusColor" :src="`backend/uploads/users/basketball.png`" alt="image">
+                    <span>Bascketball</span>
                 </a>
             </li>
             <li class="nav-item">
