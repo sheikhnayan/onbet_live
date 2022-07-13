@@ -75099,10 +75099,10 @@ var render = function () {
             [
               _c("h4", { staticClass: "text-center" }, [
                 _c("img", {
+                  staticClass: "tennisCusColor",
                   attrs: {
-                    src: "backend/uploads/users/tennis.png",
+                    src: "backend/uploads/users/tabletennis.png",
                     alt: "image",
-                    width: "20",
                   },
                 }),
                 _vm._v("\n                    Table Tennis\n                "),

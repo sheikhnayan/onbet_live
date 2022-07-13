@@ -283,7 +283,7 @@
             <div class="tab-pane fade" id="tennis" role="tabpanel" aria-labelledby="tennis-tab">
                 <div class="sports_single_category">
                     <h4  class="text-center">
-                        <img :src="`backend/uploads/users/tennis.png`" alt="image" width="20">
+                        <img class="tennisCusColor" :src="`backend/uploads/users/tabletennis.png`" alt="image">
                         Table Tennis
                     </h4>
                     <div v-for="(match, key) in matches[4]">
