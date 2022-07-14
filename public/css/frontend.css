@@ -17325,7 +17325,8 @@ header h1:before {
     padding-left: 10px;
     line-height: 4.4rem;
     background: #023047;
-    color: #fff
+    color: #fff;
+    padding-bottom: 45px;
 }
 
 .onBetNav header h1 {
