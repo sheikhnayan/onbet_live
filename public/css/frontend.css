@@ -7042,6 +7042,9 @@ pre code {
 }
 
 @media (min-width:768px) {
+    .site-logo {
+        display: none;
+    }
     .container {
         max-width: 720px
     }
