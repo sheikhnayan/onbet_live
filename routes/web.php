@@ -102,7 +102,7 @@
     /*Route::get('/ethical/hacked', 'FrontendController@ethicalHacking');*/
 
     /*Dashboard route*/
-    Route::group(['middleware' => ['auth:admin','logout_admins','super_admin']], function () {
+    Route::group(['middleware' => ['auth:admin','logout_admins']], function () {
         Route::get('/admin/request/user/online/deposit',"UserdepositController@userOnlineDepositRequestView")->name("request_online_deposit");
         Route::post('/admin/approve/user/online/deposit/request/{id}',"UserdepositController@approveUserOnlineDepositRequest")->name("approve_user_online_deposit_request");
 
