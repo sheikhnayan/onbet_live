@@ -21095,7 +21095,7 @@ input[type=number]::-webkit-outer-spin-button {
     background-color: #8ecae6;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 800px) {
     .site-logo {
         display: none !important;
     }
